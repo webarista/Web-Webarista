@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jana Zlámalová – Webový Barista | Tvorba webů, které dávají smysl</title>
+    <meta name="description"
+        content="Tvořím moderní a funkční weby, které dávají smysl vám i vašim zákazníkům. Provázím vás celým procesem od návrhu až po spuštění.">
+    <link rel="canonical" href="https://www.webarista.cz">
+    <link rel="icon" type="image/png" href="Obrazky/favicon-webarista.png">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Jana Zlámalová – Webový Barista">
+    <meta property="og:description" content="Tvořím weby, které dávají smysl vám i vašim zákazníkům.">
+    <meta property="og:image" content="Obrazky/profil-jana-zlamalova.jpg">
+    <meta property="og:url" content="https://www.webarista.cz">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Marcellus&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="logo">
+                <img src="Obrazky/logo-webarista.png" alt="Webarista logo" width="150" height="auto">
+            </a>
+            <button class="hamburger-menu" aria-label="Otevřít menu" aria-controls="primary-navigation"
+                aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <nav id="primary-navigation" class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link active">Domů</a></li>
+                    <li class="nav__item"><a href="#sluzby" class="nav__link">Služby</a></li>
+                    <li class="nav__item"><a href="#jak-to-probiha" class="nav__link">Tvorba webu</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#reference" class="nav__link">Reference</a></li>
+                    <li class="nav__item"><a href="#cenik" class="nav__link">Ceník</a></li>
+                    <li class="nav__item"><a href="#kontakt" class="nav__link">Kontakt</a></li>
+                    <li class="nav__item"><a href="#cta" class="btn btn--primary nav__cta">Konzultace</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <span class="hero__subtitle">JANA ZLÁMALOVÁ – WEBOVÝ BARISTA</span>
+                    <h1 class="hero__title">Společně<br>vyladíme web<br><span class="underline-style">od prvního
+                            doušku</span><br>až do poslední kapky</h1>
+                    <p class="hero__text">Tvořím weby, které dávají smysl vám i vašim zákazníkům. Provázím vás celým
+                        procesem – od ujasnění záměru až po spuštění funkčního webu.</p>
+                    <a href="#cta" class="btn btn--primary">CHCI KONZULTACI</a>
+                </div>
+                <div class="hero__image-wrapper">
+                    <div class="hero__drop-shape">
+                        <img src="Obrazky/profil-jana-zlamalova.jpg" alt="Jana Zlámalová" class="hero__image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- S čím vám pomůžu (Services) -->
+        <section id="sluzby" class="section services">
+            <div class="container">
+                <h2 class="section__title text-center">S čím vám pomůžu</h2>
+                <div class="services__grid">
+                    <div class="service-card">
+                        <ul class="service-list">
+                            <li><i class="bi bi-check-circle-fill"></i> Ujasnit cíl webu a komu je určený</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Pochopit, co je důležité říct a co potlačit</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Navrhnout strukturu stránek a jejich obsah</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Pomoci s texty nebo vás k nim navést</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <ul class="service-list">
+                            <li><i class="bi bi-check-circle-fill"></i> Postavit web tak, aby byl přehledný a použitelný
+                            </li>
+                            <li><i class="bi bi-check-circle-fill"></i> Napojit web na formuláře, rezervace a další
+                                nástroje</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Pomoci s grafikou a sladěním brandingu</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Postarat se o technické nastavení a spuštění
+                                webu</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="text-center mt-4 mx-auto">Nemusíte mít vše hned promyšlené dopředu. Společně si to postupně
+                    poskládáme.</p>
+            </div>
+        </section>
+
+        <!-- Jak probíhá tvorba webu (Process) -->
+        <section id="jak-to-probiha" class="section process">
+            <div class="container">
+                <h2 class="section__title text-center">Jak probíhá tvorba webu</h2>
+                <div class="process__grid">
+                    <div class="process-step">
+                        <div class="process-step__icon">
+                            <!-- 1. Arrow (Analyzing direction) -->
+                            <img src="Obrazky/ikona-sipka-webarista.png" alt="Analýza" loading="lazy">
+                        </div>
+                        <h3 class="process-step__title">1. Analýza a směr</h3>
+                        <p class="process-step__text">Poznáme vaši značku, cíle a potřeby. Ujasníme si, pro koho web je
+                            a co má splnit.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-step__icon">
+                            <!-- 2. Wireframe -->
+                            <img src="Obrazky/ikona-wireframe-webarista.png" alt="Návrh" loading="lazy">
+                        </div>
+                        <h3 class="process-step__title">2. Návrh a wireframe</h3>
+                        <p class="process-step__text">Navrhnu strukturu webu a rozložení obsahu. Vše má jasný záměr a
+                            logiku.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-step__icon">
+                            <!-- 3. Design -->
+                            <img src="Obrazky/ikona-design-webarista.png" alt="Design" loading="lazy">
+                        </div>
+                        <h3 class="process-step__title">3. Design a vývoj</h3>
+                        <p class="process-step__text">Vytvořím vizuální podobu webu a převedu ji do funkčního řešení.
+                            Dávám důraz na čitelnost a přehlednost.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-step__icon">
+                            <!-- 4. Launch (Rocket) -->
+                            <img src="Obrazky/ikona-raketa-webarista.png" alt="Spuštění" loading="lazy">
+                        </div>
+                        <h3 class="process-step__title">4. Ladění a spuštění</h3>
+                        <p class="process-step__text">Web společně projdeme, doladíme detaily a spustíme. Nezůstáváte v
+                            tom sami.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ukázka mé práce (Portfolio) -->
+        <section id="portfolio" class="section portfolio">
+            <div class="container">
+                <h2 class="section__title text-center">Ukázka mé práce</h2>
+                <p class="text-center mb-6 mx-auto">Každý projekt vznikl jinak – podle klienta, cíle a obsahu.</p>
+
+                <div class="portfolio__grid">
+                    <a href="https://jirinamatinkova.cz" target="_blank" class="portfolio-item">
+                        <div class="portfolio-item__image">
+                            <!-- Assuming direct link or # if not provided -->
+                            <img src="Obrazky/mockup-jirina-martinkova.jpg" alt="Jiřina Martínková web" loading="lazy">
+                        </div>
+                        <div class="portfolio-item__content">
+                            <h3 class="portfolio-item__title">jirinamatinkova.cz</h3>
+                            <p class="portfolio-item__desc">Jednoduchý web jako online vizitka, který pomáhá získávat
+                                nové klienty. Přehledné rozložení, jemná grafika a snadná orientace.</p>
+                            <span class="portfolio-item__link">Přejít na web &rarr;</span>
+                        </div>
+                    </a>
+
+                    <a href="https://luciepisecka.cz" target="_blank" class="portfolio-item">
+                        <div class="portfolio-item__image">
+                            <img src="Obrazky/mockup-lucie-pisecka.jpg" alt="Lucie Písecká web" loading="lazy">
+                        </div>
+                        <div class="portfolio-item__content">
+                            <h3 class="portfolio-item__title">luciepisecka.cz</h3>
+                            <p class="portfolio-item__desc">Web pro fotografku s důrazem na prezentaci práce a osobní
+                                styl. Minimalistický design, přehledné galerie a jasná struktura.</p>
+                            <span class="portfolio-item__link">Přejít na web &rarr;</span>
+                        </div>
+                    </a>
+
+                    <a href="https://divadloprostor.cz" target="_blank" class="portfolio-item">
+                        <div class="portfolio-item__image">
+                            <img src="Obrazky/mockup-divadlo-prostor.jpg" alt="Divadlo Prostor web" loading="lazy">
+                        </div>
+                        <div class="portfolio-item__content">
+                            <h3 class="portfolio-item__title">divadloprostor.cz</h3>
+                            <p class="portfolio-item__desc">Web divadla pro prezentaci programu a aktuálních
+                                představení. Přehledný kalendář akcí a snadná správa obsahu.</p>
+                            <span class="portfolio-item__link">Přejít na web &rarr;</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Co říkají klienti (Testimonials) -->
+        <section id="reference" class="section testimonials">
+            <div class="container">
+                <h2 class="section__title text-center">Co říkají klienti</h2>
+                <div class="testimonials__grid">
+                    <!-- Reference 1 -->
+                    <div class="testimonial-card">
+                        <img src="Obrazky/lucie-pisecka_fotografka.jpg" alt="Lucie Písecká" class="testimonial-image"
+                            loading="lazy">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-card__text">„S Janou se na tvorbě mého webu spolupracovalo jedna radost.
+                            Je moc příjemná a komunikace je rychlá a efektivní. Má cit pro detail a web umí vyladit do
+                            poslední tečky. Jsem ráda, že si vzala do rukou můj web právě ona. Všem jí můžu jen a jen
+                            doporučit.“</p>
+                        <button class="btn-expand-review">Celá reference</button>
+                        <cite class="testimonial-card__author">
+                            <strong>Lucie Písecká</strong><br>Fotografka
+                        </cite>
+                    </div>
+
+                    <!-- Reference 2 -->
+                    <div class="testimonial-card">
+                        <img src="Obrazky/heda-hovorkova_kavarna-klicka.jpg" alt="Heda Hovorková"
+                            class="testimonial-image" loading="lazy">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-card__text">„S Janou jsme se seznámily na baristickém kurzu, což považuji
+                            dodnes za znamení osudu. V té době jsem otevírala vlastní kavárnu a s velkou vděčností jsem
+                            na Janu delegovala všechny texty, výběr fotografií i navržení základních sekcí, konzultovaly
+                            jsme on-line i osobně, tvorba byla velmi efektivní. Spolupráce byla pro mě nejen
+                            inspirativní, ale i podporující. Díky jejím pracovním zkušenostem, ale i "obyčejné" lidské
+                            laskavosti jsem v Janě našla více než dodavatele webové prezentace. Oceňuji zejména
+                            pečlivost, klid a invenční přístup.“</p>
+                        <button class="btn-expand-review">Celá reference</button>
+                        <cite class="testimonial-card__author">
+                            <strong>Heda Hovorková</strong><br>Kavárna Klíčka
+                        </cite>
+                    </div>
+
+                    <!-- Reference 3 -->
+                    <div class="testimonial-card">
+                        <img src="Obrazky/pavlina-kapalova_divadlo-prostor.jpg" alt="Pavlína Kapalová"
+                            class="testimonial-image" loading="lazy">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-card__text">„Jana je velmi precizní a vždy ochotna profesionálně pomoci
+                            vytvořit váš web přesně podle vašich představ a zároveň vás umí usměrnit v nápadech, které s
+                            ním naopak moc neladí. Naše spolupráce vyústila ve funkční a úspěšně navštěvované stránky
+                            pro divadloprostor.cz. Pomohla nám také s nastavením platební brány a administrací. Janu vám
+                            můžeme vřele doporučit.“</p>
+                        <button class="btn-expand-review">Celá reference</button>
+                        <cite class="testimonial-card__author">
+                            <strong>Pavlína Kapalová</strong><br>Divadlo Prostor
+                        </cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Orientační rozpočet (Pricing) -->
+        <section id="cenik" class="section pricing">
+            <div class="container">
+                <h2 class="section__title text-center">Orientační rozpočet</h2>
+                <p class="text-center mb-6 mx-auto">Každý projekt nacením individuálně – podle cíle webu a rozsahu.</p>
+                <div class="pricing__grid">
+
+                    <div class="pricing-card">
+                        <h3 class="pricing-card__title">Web pomocí Vibe Codingu</h3>
+                        <p class="pricing-card__desc">Efektivní tvorba webu s využitím moderních AI nástrojů. Rychlé,
+                            levné a kvalitní řešení na míru.</p>
+                        <p class="pricing-card__price">7&nbsp;500&nbsp;Kč</p>
+                    </div>
+
+                    <div class="pricing-card featured">
+                        <h3 class="pricing-card__title">Jednostránkový web</h3>
+                        <p class="pricing-card__desc">Profesionální prezentace. Včetně napojení na redakční systém
+                            (CMS), díky kterému si můžete sami snadno upravovat texty i fotky.</p>
+                        <p class="pricing-card__price">od 15&nbsp;000&nbsp;Kč</p>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3 class="pricing-card__title">Vícestránkový web</h3>
+                        <p class="pricing-card__desc">Rozsáhlejší web s podstránkami a strukturou. Ideální pro firmy.
+                            Včetně redakčního systému (CMS) pro správu obsahu.</p>
+                        <p class="pricing-card__price">od 20&nbsp;000&nbsp;Kč</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="cta" class="section cta-section">
+            <div class="container cta-section__container">
+                <div class="cta-section__content">
+                    <h2 class="cta-section__title">Pojďme to probrat</h2>
+                    <p class="cta-section__text">Konzultace je ideální první krok, pokud si nejste jistí, kudy začít.
+                        Ráda se s vámi pobavím o vašem webu a možnostech řešení.</p>
+                    <a href="https://forms.gle/your-google-form-link" target="_blank" class="btn btn--primary">Vyplnit
+                        dotazník</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontakt -->
+        <section id="kontakt" class="section contact">
+            <div class="container contact__container">
+                <div class="contact__content">
+                    <p class="contact__intro">Pokud nechcete vyplňovat dotazník, klidně mi napište nebo zavolejte.</p>
+
+                    <div class="contact__links">
+                        <a href="mailto:jana@webarista.cz" class="contact__link">
+                            <img src="Obrazky/ikona-mail-webarista.png" alt="Email" class="contact__icon">
+                            jana@webarista.cz
+                        </a>
+                        <a href="tel:+420721655083" class="contact__link">
+                            <img src="Obrazky/ikona-phone-webarista.png" alt="Telefon" class="contact__icon">
+                            +420 721 655 083
+                        </a>
+                        <a href="https://wa.me/420721655083" class="contact__link">
+                            <img src="Obrazky/ikona-whatsapp-webarista.png" alt="WhatsApp" class="contact__icon">
+                            WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="contact__image">
+                    <img src="Obrazky/profil-jana-zlamalova-prace-na-pocitaci.jpg" alt="Jana Zlámalová" loading="lazy">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__brand">
+                <img src="Obrazky/logo-webarista-white.png" alt="WeBarista" class="footer__logo" width="120">
+                <p class="footer__tagline">Weby, které dávají smysl.</p>
+            </div>
+
+            <div class="footer__contact">
+                <h3>Kontakt</h3>
+                <p><a href="mailto:jana@webarista.cz">jana@webarista.cz</a></p>
+                <p><a href="tel:+420725655408">+420 725 655 408</a></p>
+                <p>WhatsApp</p>
+            </div>
+
+            <div class="footer__copyright">
+                <p>&copy; 2026 Webarista</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

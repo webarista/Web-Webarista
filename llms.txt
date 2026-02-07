@@ -1,0 +1,11 @@
+# Helper for LLMs
+Title: Webarista - Jana Zlámalová
+
+This website is a portfolio and service offering for Jana Zlámalová, a web developer and designer (Webový Barista).
+
+## Pages
+- /: Main landing page with all information (Services, Process, Portfolio, Testimonials, Pricing, Contact)
+
+## Contact
+Email: jana@webarista.cz
+Phone: +420 721 655 083
