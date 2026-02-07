@@ -179,6 +179,8 @@ p {
 .logo img {
   height: 48px;
   width: auto;
+  flex-shrink: 0;
+  /* Prevent logo from shrinking */
 }
 
 /* Navigation - Mobile First */
@@ -228,11 +230,20 @@ p {
 
 .nav__link {
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 300;
+  /* Lighter font */
   /* Lighter */
   color: var(--color-text-main);
   text-transform: uppercase;
   letter-spacing: 1px;
+  display: flex;
+  /* Flex to align icon */
+  align-items: center;
+}
+
+.nav__link i {
+  font-size: 1.2rem;
+  /* Ensure icon matches text size */
 }
 
 .nav__link:hover,
@@ -265,6 +276,11 @@ p {
 
   .nav__link {
     font-size: 1rem;
+  }
+
+  .nav__link i {
+    font-size: 1.3rem;
+    /* Slightly larger icon on desktop */
   }
 }
 
@@ -331,60 +347,70 @@ p {
   align-items: center;
 }
 
-/* Drop Shape */
-/* 
-   Shape: Tear drop.
-   Sharp point Top-Left (0 50 50 50)
-   To point Left: Rotate -45deg.
-*/
-.hero__drop-shape {
-  width: 350px;
-  height: 350px;
-  border-radius: 0% 50% 50% 50%;
-  transform: rotate(-45deg);
-  /* Points Left */
-  overflow: hidden;
+/* Hero Image & Decoration */
+.hero__image-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 450px;
+  aspect-ratio: 1;
+  /* Keep it roughly square */
+  margin: 0 auto;
+}
+
+.hero__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius-lg);
+  /* Rounded rectangle */
   box-shadow: var(--shadow-lg);
-  border: 4px solid white;
-  animation: pulse-drop 8s ease-in-out infinite;
-  background-color: var(--color-bg-light);
+  z-index: 2;
+  /* On top of decoration */
   position: relative;
 }
 
-/* Image inside */
-.hero__image {
-  width: 140%;
-  height: 140%;
+/* Decorative Background Drops */
+.hero__image-bg {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  /* Counter-rotate: +45deg to compensate parent -45deg. 
-     Translate -50% -50% to center. */
-  transform: translate(-50%, -50%) rotate(45deg);
-  object-fit: cover;
-  object-position: center 25%;
-  /* Focus mainly on face */
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-primary);
+  opacity: 0.15;
+  border-radius: 0% 50% 50% 50%;
+  transform: rotate(-45deg);
+  z-index: 1;
+  /* Behind image */
+  top: -10%;
+  left: -10%;
+  animation: float-drop 6s ease-in-out infinite;
 }
 
-@keyframes pulse-drop {
-  0% {
-    border-radius: 0% 50% 50% 50%;
-    transform: rotate(-45deg);
-  }
+.hero__image-bg--2 {
+  background-color: var(--color-primary);
+  opacity: 0.1;
+  width: 80%;
+  height: 80%;
+  top: auto;
+  bottom: -15%;
+  left: auto;
+  right: -15%;
+  transform: rotate(-135deg);
+  /* Pointing down-right */
+  animation: float-drop 8s ease-in-out infinite reverse;
+}
 
-  33% {
-    border-radius: 5% 45% 55% 45%;
-    transform: rotate(-43deg) scale(1.02);
-  }
+@keyframes float-drop {
 
-  66% {
-    border-radius: 0% 55% 45% 55%;
-    transform: rotate(-47deg) scale(0.98);
-  }
-
+  0%,
   100% {
-    border-radius: 0% 50% 50% 50%;
-    transform: rotate(-45deg);
+    transform: translate(0, 0) rotate(-45deg);
+  }
+
+  50% {
+    transform: translate(10px, -10px) rotate(-40deg);
   }
 }
 
